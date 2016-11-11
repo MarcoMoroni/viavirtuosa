@@ -1,0 +1,370 @@
+@import url("fonts/font.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Avenir Next LT Pro Regular';
+  text-align: center;
+}
+
+::selection {
+  background: rgba(243, 137, 48, 0.4);
+}
+
+::-moz-selection {
+  background: rgba(243, 137, 48, 0.4);
+}
+
+p, h1, h2, a {
+  border-style: solid;
+  border-width: 0px 20px 0px 20px;
+  border-color: rgba(255, 255, 255, 0);
+  margin: auto;
+  max-width: 1000px;
+}
+
+p {
+  font-size: 110%;
+  color: rgb(92, 78, 71);
+  line-height: 30px;
+}
+
+.parallax-backgound {
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+h2 {
+  font-family: 'Avenir Next LT Pro Demi';
+  text-transform: uppercase;
+  color: rgb(191, 170, 153);
+  letter-spacing: 4px;
+  font-size: 90%;
+  margin-bottom: 100px;
+  line-height: 30px;
+}
+
+.section-top-space, .section-bottom-space {
+  height: 160px;
+}
+
+@media screen and (max-width: 610px) {
+  p {
+    font-size: 100%;
+    color: rgb(92, 78, 71);
+    line-height: 25px;
+  }
+  .section-top-space, .section-bottom-space { height: 100px; }
+  h2 { margin-bottom: 80px; font-size: 80%;}
+}
+
+/***** impact *****/
+
+.impact {
+  font-family: "Brandon Grotesque Thin";
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.impact p{
+  font-size: 190%;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 610px) {
+  .impact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .impact p{
+    font-size: 140%;
+    line-height: 35px;
+  }
+}
+
+/***** section-header *****/
+
+.header-top-space, .header-bottom-space {
+  height: 150px;
+}
+
+.header-middle-space {
+  height: 100px;
+}
+
+#header-logo, #viruouspath-logo {
+  width: 465px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#section-header {
+  background-image:
+    linear-gradient(rgba(243, 137, 48, 0.3), rgba(243, 137, 48, 0.3)),
+    url("img/castle.jpg");
+  background-attachment: fixed;
+}
+
+h1 {
+  color: white;
+  font-family: 'Avenir Next LT Pro Demi';
+  text-transform: uppercase;
+  font-size: 700%;
+}
+
+#impact-header {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+@media screen and (max-width: 900px) {
+  h1 { font-size: 500%; }
+  #header-logo, #viruouspath-logo { width: 350px; }
+}
+
+@media screen and (max-width: 610px) {
+  h1 { font-size: 260%; }
+  #header-logo, #viruouspath-logo { width: 170px; }
+  .header-top-space, .header-bottom-space { height: 100px; }
+  .header-middle-space { height: 50px; }
+}
+
+/***** section-whatyoufind *****/
+
+#section-whatyoufind {
+  background-color: rgb(255 255, 255);
+  display:inline-block;
+}
+
+#thingsyoufind {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1800px;
+}
+
+.whatyoufind-header {
+  display: flex;
+  align-items: center;
+
+}
+
+.itemyoufind {
+  padding: 40px;
+  min-width: 100px;
+  max-width: 480px;
+  text-align: left;
+}
+
+.whatyoufind-icon {
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+  background-color: rgb(242, 229, 218);
+}
+
+#section-whatyoufind h3 {
+  font-family: 'Avenir Next LT Pro Demi';
+  color: rgb(243, 137, 48);
+  font-size: 140%;
+  display: inline;
+  margin-left: 20px;
+}
+
+#section-whatyoufind p {
+  border: none;
+  color: rgb(166, 140, 119);
+  font-size: 90%;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 610px) {
+  #section-whatyoufind h3 { font-size: 125%; }
+  .whatyoufind-icon {
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+    background-color: rgb(242, 229, 218);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .itemyoufind { max-width: 650px; }
+}
+
+/***** section-innovator *****/
+
+#section-innovator {
+  color: rgb(255, 255, 255);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+    url("img/tower.png");
+  background-attachment: fixed;
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+
+/***** section-thevirtuouspath *****/
+
+#section-thevirtuouspath {
+  background-color: rgb(243, 236, 232);
+}
+
+#section-thevirtuouspath #paths-list {
+  display:inline-block;
+  list-style: none;
+}
+
+#section-thevirtuouspath #paths-list p {
+  border: 4px solid white;
+  padding: 20px 30px;
+  margin: 20px 20px 20px;
+  text-decoration: line-through;
+}
+
+#section-thevirtuouspath > p {
+  margin-bottom: 60px;
+}
+
+#section-thevirtuouspath #paths-list li:nth-child(3) p {
+  color: rgb(243, 137, 48);
+  text-decoration: none;
+  border: 4px solid rgb(243, 137, 48);
+}
+
+@media screen and (max-width: 610px) {
+  #section-thevirtuouspath > p { margin-bottom: 10px; }
+  #section-thevirtuouspath #paths-list p { padding: 12px 22px; }
+  #section-thevirtuouspath p { text-align: left; }
+}
+
+/***** section-customer *****/
+
+#section-customer {
+  background-color: rgb(255 255, 255);
+  display:inline-block;
+}
+
+#section-customer ul {
+  list-style-type: none;
+}
+
+#section-customer li {
+  margin-bottom: 20px;
+}
+
+#customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#current-customer, #future-customer {
+  max-width: 500px;
+  margin-top: 160px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#future-customer p {
+  color: rgb(243, 137, 48);
+}
+
+#future-customer h2 {
+  color: rgb(224, 163, 112);
+}
+
+@media screen and (max-width: 610px) {
+  #current-customer, #future-customer {
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  #customers p { text-align: left; }
+}
+
+@media screen and (max-width: 1170px) {
+  #current-customer, #future-customer { max-width: none; }
+}
+
+/***** section-castle *****/
+
+#section-castle {
+  color: black;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)),
+    url("img/castle.jpg");
+  background-attachment: fixed;
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+
+#section-castle p {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 610px) {
+  #section-castle {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #section-castle p { margin-top: 40px; }
+}
+
+/***** section-footer *****/
+
+#section-footer {
+  background-color: rgb(243, 137, 48);
+}
+
+#section-footer ::selection {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#section-footer p {
+  color: white;
+}
+
+#section-footer > p {
+  margin-bottom: 20px;
+}
+
+.big {
+  font-size: 300%;
+}
+
+#section-footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+#section-footer a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 610px) {
+  .big { font-size: 160%; }
+  #contact { margin-top: 60px; }
+  #contact p, a { margin-bottom: 12px; }
+}
+
+@media screen and (min-width: 1000px) {
+  .big { font-size: 500%; }
+}
